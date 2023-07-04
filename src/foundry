@@ -1,0 +1,12 @@
+# change number of fuzz runs by adding below in `foundry.toml`
+[fuzz]
+runs = 100
+
+# invariant `foundry.toml`
+[invariant]
+runs = 128
+depth = 128
+fail_on_revert=false
+
+# get all the functions on a contract
+forge inspect <contracr> methods
